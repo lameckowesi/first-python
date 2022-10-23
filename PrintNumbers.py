@@ -1,4 +1,7 @@
 #While loop for numbers bewteen 1 to 10
+from tokenize import Double
+
+
 Number = 1
 while Number <= 10:
     print(Number)
@@ -29,3 +32,24 @@ number = 1
 while number <=30:
     print (f"While loop Odd Number {number}")
     number +=2
+
+#Financial Statement Calculator
+
+def calcFinancialStatement ():
+    income = 50000
+    marketing = 0.25 * income
+    opex = 0.5 * income
+    customerAcquisition = 0.25 * income
+    customersAcquisitionCost = 5
+    customersNumber = customerAcquisition / customersAcquisitionCost
+    expenses = marketing + opex + customerAcquisition
+    balance = income - expenses
+
+    print (f"Income:  {income}")
+    print (f"Marketing:  {marketing}")
+    print (f"Customer Acquisition:  {customerAcquisition}")
+    print (f"Total Expenses:  {expenses}")
+    print (f"No of Customers Acquired: {customersNumber}")
+    print (f"Balance:  {balance}")
+    
+calcFinancialStatement()
